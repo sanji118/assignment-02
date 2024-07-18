@@ -17,7 +17,8 @@
     font-weight: 400;
     font-size: 1rem;
     color: rgba(255, 255, 255 , 0.5);
-    margin: 0px 0px 0px 0px;
+    margin: 0;
+    padding: 10px;
 }
 .display{
     display: flex;
@@ -28,10 +29,13 @@
 .h3{
     font-weight: 900;
     font-size: 3rem;
+    margin: 0;
+    padding-top: 30px;
 }
 .h6{
     font-weight: 600;
     font-size: 1.25rem;
+    margin: 0;
 }
 .padding{
     padding: 58px 190px 58px 190px;
@@ -44,29 +48,34 @@
     font-size: 1.25rem;
     text-decoration: none;
     color: white;
+    border: none;
+    margin-top: 20px;
 }
 #banner{
     background-color: rgba(7, 7, 7, 0.534);
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(7, 7, 7, 0.532) 100%);
-    
 }
 .fitness{
     color: rgb(230, 83, 60);
     font-weight: 800;
     font-size: 2.25rem;
 }
-.navbar{
+.navbar , #run div.display{
     justify-content: baseline;
     align-items: center;
     gap: 29rem;
 
 }
-.banner-img{
-    padding-left: 10rem;
+#banner section.display{
+    gap: 160px;
+    height: 522px;
+    
 }
 .banner-text{
     font-weight: 900;
     font-size: 4.875rem;
+    margin: 0;
+    padding-top: 64px;
 }
 .download-btn{
     box-sizing: border-box;
@@ -106,6 +115,7 @@
     border-radius: 45px;
     background-color: rgb(230, 83, 60);
     padding: 8px 20px 8px 20px;
+    margin: 0;
 }
 .tag-container{
     box-sizing: border-box;
@@ -136,6 +146,9 @@
 .tag-text{
     padding-left: 15px;
 }
+.tag-container p.para{
+    padding: 0;
+}
 .tag-container h4{
     font-size: 1.5rem;
     font-weight: 900;
@@ -150,20 +163,82 @@
     top: -45px;
     left: 5px;
 }
+main{
+    background-color: black;
+}
+#habit img{
+    border-radius: 50%;
+    border: 4px solid rgb(86, 84, 84);
+}
+#habit div.display{
+    gap: 25px;
+    padding-top: 54px;
+}
+#run>div{
+    background-color:  rgb(54, 53, 53);
+    border-radius: 18px;
+    padding: 41px 54px;
+}
+#run img{
+    width: 90%;
+}
+#exercise p{
+    font-weight: 500;
+    font-size: 0.875rem;
+    position: relative;
+    color: white;
+}
+#exercise div.display{
+    flex-wrap: wrap;
+}
+.pic-1{
+    background: rgba(6, 255, 210, 0.5);
+    background-image: url("./images/exercise1.jpg");
+}
+.pic-2{
+    background: rgba(255, 0, 0, 0.3);
+    background-image: url("./images/exercise2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.pic-3{
+    background: rgba(0, 0, 0, 0.5);
+    background-image:  url("./images/exercise3.jpg");
+}
+.pic-4{
+    background: rgba(0, 0, 0, 0.5);
+    background-image:  url("./images/exercise4.jpg");
+}
+.pic-5{
+    background: rgba(66, 255, 0, 0.3); 
+    background-image: url("./images/exercise5.jpg");
+}
+.pic-6{
+    background: rgba(0, 71, 255, 0.3);
+    background-image:  url("./images/exercise6.jpg");
+}
 
 
 
-@media screen and (max-width:576px) {
+
+@media screen and (max-width: 576px) {
     #banner{
         padding: 50px 20px 50px 20px;
     }
-    .display{
+    .display , #run div.display{
         flex-direction: column;
+        gap: 45px;
+    }
+    .padding{
+        padding: 38px 28px;
+    }
+    #banner section.display{
+        height: 1080px;
         gap: 45px;
     }
     .dropdown{
         overflow: hidden;
-        background-image: url("./images/dropdown-icon.webp");
+        border: 1px;
     }
     .navlist{
         display: none;  
@@ -177,10 +252,31 @@
     }
     .button{
         display: flex;
-        gap: 14px;
+        justify-content: space-between; 
     }
-    .fitness, .banner-text, .button , .banner-img{
+    .banner-text, .button , #banner-img{
         text-align: left;
         margin: 0;
+    }
+    #banner-img{
+        padding-left: 90px;
+        height: 530px;
+        max-width: 576px;
+    }
+    #banner-img .box-1{
+       margin-left: -25px;
+    }
+    #habit{
+        text-align: center;
+    }
+    .h6{
+        padding-top: 15px;
+    }
+    #run img{
+       width: 300px;
+       height: 319px;
+    }
+    #run div.display{
+        padding: 35px;
     }
 }
