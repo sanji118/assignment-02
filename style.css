@@ -411,13 +411,13 @@ footer hr{
     }
     #dropdown-menu:hover .navlist li{
         margin: 0;
+        width: 100%;
     }
     #dropdown-menu:hover .navlist li a{
         border-radius: 16px;
         background-color: rgb(230, 83, 60);
         padding: 8px 20px 8px 20px;
         margin: 0;
-        width: 100%;
     }
     .button{
         display: flex;
