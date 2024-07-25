@@ -454,7 +454,7 @@ footer hr{
         padding-top: 15px;
     }
     #run img{
-       
+       width: 103%;
        height: 319px;
     }
     #run div.display{
@@ -480,8 +480,8 @@ footer hr{
     .img-box-2, .img-box-4{
         width: 45%;
     }
-    .pic-2 >p{
-        left: 30px;
+    .pic-2 >p , .pic-4 >p{
+        left: 10px;
     }
     #bmi form div.display{
         flex-direction: row;
