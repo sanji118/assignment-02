@@ -149,6 +149,7 @@
 }
 .tag-container p.para{
     padding: 0;
+    opacity: 1.5;
 }
 .tag-container h4{
     font-size: 1.5rem;
@@ -370,7 +371,7 @@ footer hr{
         width: 100%;
     }
     #banner{
-        padding: 50px 20px 50px 20px;
+        padding: 50px 20px 0px 20px;
     }
     .display , #run div.display{
         flex-direction: column;
@@ -383,6 +384,7 @@ footer hr{
         height: max-content;
         width: fit-content;
         gap: 45px;
+        margin-bottom: 0;
     }
     .navbar{
         width: 100%;
@@ -448,7 +450,7 @@ footer hr{
     }
     #banner-img{
         padding-left: 50px;
-        height: 530px;
+        height: 481px;
         width: 90%;
     }
     #banner-img img{
