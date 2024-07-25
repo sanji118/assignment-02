@@ -193,6 +193,7 @@ main{
 #exercise div.display{
     flex-direction: row;
     height: 288px;
+    width: 80%;
 }
 #exercise div.display  p{
     font-size: 1rem;
