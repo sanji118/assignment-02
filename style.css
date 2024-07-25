@@ -466,6 +466,9 @@ footer hr{
     .img-box-2, .img-box-4{
         width: 45%;
     }
+    .pic-2 >p{
+        left: 30px;
+    }
     #bmi form div.display{
         flex-direction: row;
         gap: 0;
