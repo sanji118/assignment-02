@@ -16,7 +16,7 @@
 .para{
     font-weight: 400;
     font-size: 1rem;
-    color: rgba(255, 255, 255 , 0.5);
+    color: rgba(210, 210, 210, 0.5);
     margin: 0;
     padding: 10px;
 }
@@ -60,8 +60,8 @@
     font-weight: 800;
     font-size: 2.25rem;
 }
-.navbar , #run div.display{
-    justify-content: baseline;
+.navbar {
+    display: flex;
     align-items: center;
     gap: 29rem;
 
@@ -95,6 +95,7 @@
     padding-top: 30px;
 }
 .navlist{
+    display: flex;
     border: 1px solid rgba(255, 255, 255 , 0.1);
     box-sizing: border-box;
     border-radius: 39px;
@@ -111,7 +112,7 @@
     text-decoration: none;
     color: white;
 }
-.navlist li a:active{
+.navlist li:hover a{
     border-radius: 45px;
     background-color: rgb(230, 83, 60);
     padding: 8px 20px 8px 20px;
@@ -178,45 +179,184 @@ main{
     background-color:  rgb(54, 53, 53);
     border-radius: 18px;
     padding: 41px 54px;
+    max-width: 85%;
+    justify-content: space-between;
 }
 #run img{
-    width: 90%;
+    border-radius: 18px;
 }
 #exercise p{
     font-weight: 500;
     font-size: 0.875rem;
-    position: relative;
-    color: white;
+    margin-bottom: 10px;
 }
 #exercise div.display{
-    flex-wrap: wrap;
+    flex-direction: row;
+    height: 288px;
+}
+#exercise div.display  p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    position: relative;
+}
+#exercise div.display img{
+    height: 288px;
+}
+.img-box-1 img, .img-box-6 img{
+    width: 500px;
+}
+.img-box-2 img, .img-box-4 img{
+    width: 650px;
+}
+.img-box-3 img , .img-box-5 img{
+    width: 400px;
+}
+.pic-1,.pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
+    height: 288px;
+    position: relative;
+    top: -309px;
 }
 .pic-1{
     background: rgba(6, 255, 210, 0.5);
-    background-image: url("./images/exercise1.jpg");
+    width: 500px;
+    top: -309px;
+}
+
+.pic-1 >p, .pic-3 > p, .pic-5 >p , .pic-6>p{
+    top: 230px;
+    left: 50px;
 }
 .pic-2{
+    width: 650px;
     background: rgba(255, 0, 0, 0.3);
-    background-image: url("./images/exercise2.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 .pic-3{
+    
+    width: 400px;
     background: rgba(0, 0, 0, 0.5);
-    background-image:  url("./images/exercise3.jpg");
 }
 .pic-4{
-    background: rgba(0, 0, 0, 0.5);
-    background-image:  url("./images/exercise4.jpg");
+    width: 650px;
+    background:rgba(0, 0, 0, 0.5);
+    text-align: end;
 }
 .pic-5{
-    background: rgba(66, 255, 0, 0.3); 
-    background-image: url("./images/exercise5.jpg");
+    width: 400px;
+    background: rgba(66, 255, 0, 0.3);
 }
 .pic-6{
+    width: 500px;
     background: rgba(0, 71, 255, 0.3);
-    background-image:  url("./images/exercise6.jpg");
 }
+.pic-2 >p{
+    top: 50px;
+    left: 50px;
+}
+.pic-4 > p{
+    top: 50px;
+    left: -50px;
+}
+.bmi-chart-cal{
+    background-color: rgb(58, 58, 58);
+    margin-top: 60px;
+}
+.bmi-chart{
+    width: 50%;
+    text-align: left;
+}
+#bmi table{
+    margin-top: 30px;
+}
+table.para, th, td{
+    border: 2px solid gray;
+    font-size: 1.2rem;
+    padding: 20px;
+    border-collapse: collapse;
+}
+th,td{
+    padding-right: 70px;
+}
+th{
+    color: white;
+    font-weight: 500;
+}
+.bmi-cal{
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+input[type=text], #bmi select , #bmi option{
+    background-color: rgb(113, 108, 108);
+    border-radius: 11px;
+    border: none;
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 20px;
+    color: white;
+}
+#activity, #sex{
+    width: 100%;
+}
+input[type=submit]{
+    width: 40%;
+}
+.trainers{
+    margin: 58px 190px 58px 190px;
+    width: 51%;
+    margin-left: 400px;
+    background-color: rgb(58, 58, 58);
+    border-radius: 16px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.trainers div.display{
+    justify-content: center;
+    height: 280px;
+}
+.trainers img{
+    border-radius: 16px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+}
+.trainer-intro{
+    text-align: left;
+    position: relative;
+    top: -80px;
+    left: 30px;
+}
+footer{background-color:rgb(58, 58, 58) ;}
+#footer{
+    justify-content: space-around;
+}
+#footer ul{
+    list-style: none;
+}
+footer hr{
+    opacity: 0.3;
+    width: 80%;
+}
+.h4{
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin: 10px;
+}
+#footer ul>li{
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.copyright{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -233,26 +373,49 @@ main{
         padding: 38px 28px;
     }
     #banner section.display{
-        height: 1080px;
+        height: max-content;
+        width: fit-content;
         gap: 45px;
     }
+    .navbar{
+        width: 100%;
+        justify-content: space-between;
+    }
+    #dropdown-menu{
+        margin-left: -150px;
+    }
     .dropdown{
-        overflow: hidden;
-        border: 1px;
+        border: 3.2px solid white;
+        width: 30px;
+        margin-bottom: 5px;
+        border-radius: 3px;
     }
     .navlist{
         display: none;  
     }
-    .dropdown:active>.navlist>a{
+    #dropdown-menu:hover .navlist {
+        display: flex;
+        flex-direction: column;
         background-color: white;
         border: 1px solid rgb(176, 168, 168);
         border-radius: 20px;
-        display: block;
         float: right;
+    }
+    #dropdown-menu:hover .navlist li{
+        margin: 0;
+    }
+    #dropdown-menu:hover .navlist li a{
+        border-radius: 16px;
+        background-color: rgb(230, 83, 60);
+        padding: 8px 20px 8px 20px;
+        margin: 0;
     }
     .button{
         display: flex;
         justify-content: space-between; 
+    }
+    .banner-text{
+        font-size: 4.5rem;
     }
     .banner-text, .button , #banner-img{
         text-align: left;
@@ -261,10 +424,9 @@ main{
     #banner-img{
         padding-left: 90px;
         height: 530px;
-        max-width: 576px;
     }
     #banner-img .box-1{
-       margin-left: -25px;
+       margin-left: -55px;
     }
     #habit{
         text-align: center;
@@ -273,10 +435,204 @@ main{
         padding-top: 15px;
     }
     #run img{
-       width: 300px;
+       
        height: 319px;
     }
     #run div.display{
         padding: 35px;
+    }
+    #exercise div.display{
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+    #exercise img{
+        width: 100%;
+    }
+    .pic-1 ,.pic-2, .pic-4, .pic-5{
+        width: 100%;
+    }
+    .img-box-3, .img-box-6{
+        display: none;
+    }
+    .img-box-1 ,.img-box-5{
+        width: 55%;
+    }
+    .img-box-2, .img-box-4{
+        width: 45%;
+    }
+    #bmi form div.display{
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+    input[type=text]{
+        width: 90%;
+    }
+    #sex{
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 60%;
+    }
+    .trainers div.display{
+        gap: 10px;
+        height: fit-content;
+    }
+    .trainers div.display div{
+        height: 380px;
+    }
+    .trainers{
+        width: 82%;
+        margin-left: 50px;
+    }
+    .trainer-1 , .trainer-4{
+        display: none;
+    }
+    .trainers img{
+        width: 350px;
+        height: 350px;
+    }
+    .trainer-intro{
+        top: -100px;
+        left: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:577px) and (max-width: 993px) {
+    #banner{
+        padding: 50px 20px 50px 20px;
+    }
+    #banner section.display{
+        flex-direction: column;
+        gap: 45px;
+    }
+    .padding{
+        padding: 48px 38px;
+    }
+    #banner section.display{
+        height: max-content;
+        width: fit-content;
+        gap: 45px;
+    }
+    .navbar{
+        width: 100%;
+        justify-content: space-around;
+        gap: 100px;
+    }
+    
+    .button{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .banner-text{
+        font-size: 4.5rem;
+    }
+    .banner-text, .button , #banner-img{
+        text-align: left;
+        padding-left: 40px;
+    }
+    #banner-img{
+        padding-left: 190px;
+        height: 530px;
+    }
+    #banner-img .box-1{
+       margin-left: -55px;
+    }
+    #habit{
+        text-align: center;
+    }
+    #habit div.display{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #habit div.display div {
+        padding: 20px;
+    }
+    .h6{
+        padding-top: 15px;
+    }
+    #run{
+        width: 100%;
+        margin-right: 10px;
+    }
+    #run img{
+       height: 319px;
+       margin-left: 100px;
+
+    }
+    #run div.display{
+        padding: 35px;
+        width: 100%;
+        gap: 30px;
+    }
+    .run-description{
+        width: 300px;
+    }
+    #exercise div.display{
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+    }
+    #exercise img{
+        width: 100%;
+    }
+    .pic-1 ,.pic-2, .pic-4, .pic-5{
+        width: 100%;
+    }
+    .img-box-1 ,.img-box-5{
+        width: 55%;
+    }
+    .img-box-2, .img-box-4{
+        width: 45%;
+    }
+    #bmi form div.display{
+        flex-direction: row;
+        gap: 0;
+        width: 100%;
+    }
+    input[type=text]{
+        width: 90%;
+    }
+    #sex{
+        width: 100%;
+    }
+    input[type=submit]{
+        width: 60%;
+    }
+    .trainers div.display{
+        gap: 10px;
+        height: fit-content;
+    }
+    .trainers div.display div{
+        height: 380px;
+    }
+    .trainers{
+        width: 82%;
+        margin-left: 50px;
+    }
+    .trainer-1 , .trainer-4{
+        display: none;
+    }
+    .trainers img{
+        width: 350px;
+        height: 350px;
+    }
+    .trainer-intro{
+        top: -100px;
+        left: 50px;
     }
 }
