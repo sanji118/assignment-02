@@ -45,15 +45,17 @@
     background-color: rgb(230, 83, 60);
     padding: 16px 40px 16px 40px;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     text-decoration: none;
     color: white;
     border: none;
     margin-top: 20px;
 }
 #banner{
-    background-color: rgba(7, 7, 7, 0.534);
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(7, 7, 7, 0.532) 100%);
+    background-color: rgba(7, 7, 7, 0.9);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(3, 3, 3, 0.9) 100%);
+    padding-bottom: 0;
+
 }
 .fitness{
     color: rgb(230, 83, 60);
@@ -66,10 +68,11 @@
     gap: 29rem;
 
 }
+#banner-img, .banner-title{
+    height: 580px;
+}
 #banner section.display{
-    gap: 160px;
-    height: 522px;
-    
+    gap: 160px; 
 }
 .banner-text{
     font-weight: 900;
@@ -83,7 +86,7 @@
     border-radius: 42px;
     padding: 16px 40px 16px 40px;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     text-decoration: none;
     color: white;
     background-color: transparent;
@@ -209,13 +212,13 @@ main{
     height: 288px;
 }
 .img-box-1 img, .img-box-6 img{
-    width: 500px;
+    width: 420px;
 }
 .img-box-2 img, .img-box-4 img{
-    width: 650px;
+    width: 560px;
 }
 .img-box-3 img , .img-box-5 img{
-    width: 400px;
+    width: 350px;
 }
 .pic-1,.pic-2, .pic-3, .pic-4, .pic-5, .pic-6{
     height: 288px;
@@ -224,7 +227,7 @@ main{
 }
 .pic-1{
     background: rgba(6, 255, 210, 0.5);
-    width: 500px;
+    width: 420px;
     top: -309px;
 }
 
@@ -233,25 +236,25 @@ main{
     left: 50px;
 }
 .pic-2{
-    width: 650px;
+    width: 560px;
     background: rgba(255, 0, 0, 0.3);
 }
 .pic-3{
     
-    width: 400px;
+    width: 350px;
     background: rgba(0, 0, 0, 0.5);
 }
 .pic-4{
-    width: 650px;
+    width: 560px;
     background:rgba(0, 0, 0, 0.5);
     text-align: end;
 }
 .pic-5{
-    width: 400px;
+    width: 350px;
     background: rgba(66, 255, 0, 0.3);
 }
 .pic-6{
-    width: 500px;
+    width: 420px;
     background: rgba(0, 71, 255, 0.3);
 }
 .pic-2 >p{
@@ -291,13 +294,13 @@ th{
     text-align: left;
 }
 input[type=text], #bmi select , #bmi option{
-    background-color: rgb(113, 108, 108);
+    background-color: rgb(113, 108, 108, 0.5);
     border-radius: 11px;
     border: none;
     margin: 10px;
     font-size: 1.2rem;
     padding: 20px;
-    color: white;
+    color: rgb(172, 168, 168);
 }
 #activity, #sex{
     width: 100%;
@@ -307,8 +310,7 @@ input[type=submit]{
 }
 .trainers{
     margin: 58px 190px 58px 190px;
-    width: 51%;
-    margin-left: 400px;
+    width: 69%;
     background-color: rgb(58, 58, 58);
     border-radius: 16px;
     padding-top: 10px;
@@ -371,7 +373,7 @@ footer hr{
 
 @media screen and (max-width: 576px) {
     .body{
-        width: 100%;
+        width: 109%;
     }
     #banner{
         padding: 50px 20px 0px 20px;
@@ -379,6 +381,9 @@ footer hr{
     .display , #run div.display{
         flex-direction: column;
         gap: 45px;
+    }
+    .para{
+        font-size: 1rem;
     }
     .padding{
         padding: 35px 25px;
@@ -442,27 +447,35 @@ footer hr{
         font-size: 1rem;
     }
     .banner-text{
-        font-size: 4.5rem;
+        font-size: 2.25rem;
+    }
+    .font-banner{
+        font-size: 3.4rem;
     }
     .banner-text, .button , #banner-img{
         text-align: left;
         margin: 0;
     }
-    #banner-img{
-        padding-left: 50px;
-        height: 481px;
-        width: 90%;
+    .banner-title{
+        height: fit-content;
     }
-    #banner-img img{
-        width: 90%;
+    #banner-img{
+        padding-left: ;
     }
     #banner-img .box-1{
-       margin-left: -100px;
-       margin-top: 70px;
+       top: -550px;
+       left: 190px;
        width: 50%;
     }
+    .tag-container h1{
+        font-size: 2rem;
+    }
+    .tag-container p.para{
+        font-size: 0.9rem;
+    }
     #banner-img .box-2{
-        margin-left: 50px;
+        top: -430px;
+        left: 5px;
     }
     #habit{
         text-align: center;
@@ -487,6 +500,7 @@ footer hr{
     }
     .pic-1 ,.pic-2, .pic-4, .pic-5{
         width: 100%;
+        top: -305px;
     }
     .img-box-3, .img-box-6{
         display: none;
