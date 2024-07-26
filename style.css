@@ -38,7 +38,7 @@
     margin: 0;
 }
 .padding{
-    padding: 58px 190px 58px 190px;
+    padding: 58px 190px 58px 100px;
 }
 .btn-primary{
     border-radius: 40px;
@@ -381,7 +381,7 @@ footer hr{
         gap: 45px;
     }
     .padding{
-        padding: 38px 28px;
+        padding: 35px 25px;
     }
     #banner section.display{
         height: max-content;
