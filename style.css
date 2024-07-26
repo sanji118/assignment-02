@@ -373,7 +373,7 @@ footer hr{
 
 @media screen and (max-width: 576px) {
     .body{
-        width: 109%;
+        width: 100%;
     }
     #banner{
         padding: 50px 20px 0px 20px;
