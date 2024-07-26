@@ -566,6 +566,9 @@ footer hr{
         flex-direction: column;
         gap: 45px;
     }
+    .body{
+        width: 100%;
+    }
     .padding{
         padding: 48px 38px;
     }
