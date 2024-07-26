@@ -118,6 +118,9 @@
     padding: 8px 20px 8px 20px;
     margin: 0;
 }
+.dropdown{
+    display: none;
+}
 .tag-container{
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -395,10 +398,7 @@ footer hr{
         margin-left: -150px;
     }
     .dropdown{
-        border: 3.2px solid white;
-        width: 30px;
-        margin-bottom: 5px;
-        border-radius: 3px;
+        display: block;
     }
     .navlist{
         display: none;  
