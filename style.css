@@ -333,11 +333,11 @@ input[type=submit]{
     left: 30px;
 }
 .trainer-intro p{
-    color: white;
+    color: rgb(8, 4, 4);
 }
 footer{background-color:rgb(58, 58, 58) ;}
-#footer{
-    justify-content: space-around;
+#footer, #footer>div.display{
+    gap: 150px;
 }
 #footer ul{
     list-style: none;
@@ -573,47 +573,74 @@ footer hr{
 
 
 @media screen and (min-width:577px) and (max-width: 993px) {
-    #banner{
-        padding: 50px 20px 50px 20px;
-    }
-    #banner section.display{
-        flex-direction: column;
-        gap: 45px;
-    }
     .body{
         width: 100%;
     }
+    #banner{
+        padding: 20px 60px 0px 60px;
+    }
+    .para{
+        font-size: 1rem;
+    }
     .padding{
-        padding: 48px 38px;
+        padding: 50px 35px;
     }
     #banner section.display{
+        flex-direction: column;
         height: max-content;
         width: fit-content;
         gap: 45px;
+        margin-bottom: 0;
+        width: 100%;
     }
     .navbar{
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         gap: 100px;
     }
-    
     .button{
         display: flex;
-        justify-content: space-between; 
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    .button button{
+        padding-left: 0;
+        margin: 0;
+    }
+    .button button a{
+        padding: 16px 20px;
+    }
+    #banner .btn-primary, #banner .download-btn{
+        padding: 10px auto;
+        font-size: 1rem;
     }
     .banner-text{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
-    .banner-text, .button , #banner-img{
+    .font-banner{
+        font-size: 3.8rem;
+    }
+    .banner-text, .button {
         text-align: left;
-        padding-left: 40px;
+        margin: 0;
     }
-    #banner-img{
-        padding-left: 190px;
-        height: 530px;
+    .banner-title{
+        height: fit-content;
     }
     #banner-img .box-1{
-       margin-left: -55px;
+       top: -550px;
+       left: 450px;
+    }
+    .tag-container h1{
+        font-size: 2rem;
+    }
+    .tag-container p.para{
+        font-size: 0.9rem;
+    }
+    #banner-img .box-2{
+        top: -360px;
+        left: 200px;
     }
     #habit{
         text-align: center;
@@ -621,29 +648,17 @@ footer hr{
     #habit div.display{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-    #habit div.display div {
-        padding: 20px;
+        gap: 30px;
     }
     .h6{
         padding-top: 15px;
     }
-    #run{
-        width: 100%;
-        margin-right: 10px;
-    }
     #run img{
+       width: 103%;
        height: 319px;
-       margin-left: 100px;
-
     }
     #run div.display{
         padding: 35px;
-        width: 100%;
-        gap: 30px;
-    }
-    .run-description{
-        width: 300px;
     }
     #exercise div.display{
         flex-direction: row;
@@ -653,14 +668,22 @@ footer hr{
     #exercise img{
         width: 100%;
     }
-    .pic-1 ,.pic-2, .pic-4, .pic-5{
+    .pic-1 ,.pic-2,.pic-3, .pic-4, .pic-5, .pic-6{
         width: 100%;
+        top: -305px;
     }
-    .img-box-1 ,.img-box-5{
-        width: 55%;
+    #exercise div.display  p{
+        font-size: 0.8rem;
     }
-    .img-box-2, .img-box-4{
-        width: 45%;
+    .pic-1 >p,.pic-2> p, .pic-5> p{
+        left: 10px;
+    }
+    .pic-4> p{
+        left: 0;
+    }
+    #bmi .bmi-chart-cal, footer section.display{
+        flex-direction: column;
+        gap: 45px;
     }
     #bmi form div.display{
         flex-direction: row;
@@ -668,34 +691,31 @@ footer hr{
         width: 100%;
     }
     input[type=text]{
-        width: 90%;
-    }
-    #sex{
         width: 100%;
     }
-    input[type=submit]{
-        width: 60%;
+    #activity{
+        width: 98%;
     }
-    .trainers div.display{
-        gap: 10px;
-        height: fit-content;
+    input[type=submit]{
+        width: 30%;
     }
     .trainers div.display div{
-        height: 380px;
+        height: 350px;
     }
     .trainers{
-        width: 82%;
-        margin-left: 50px;
-    }
-    .trainer-1 , .trainer-4{
-        display: none;
+        width: 100%;
+        height: fit-content;
+       margin: 54px auto;
     }
     .trainers img{
-        width: 350px;
-        height: 350px;
+        width: 270px;
+        height: 250px;
     }
     .trainer-intro{
         top: -100px;
         left: 50px;
+    }
+    .trainer-intro .h6, .trainer-intro .para{
+        font-size: 95%;
     }
 }
