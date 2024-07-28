@@ -602,7 +602,7 @@ footer hr{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
     }
     .button button{
         padding-left: 0;
@@ -681,7 +681,7 @@ footer hr{
     .pic-4> p{
         left: 0;
     }
-    #bmi .bmi-chart-cal, footer section.display{
+    #bmi .bmi-chart-cal, #footer{
         flex-direction: column;
         gap: 45px;
     }
