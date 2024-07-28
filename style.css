@@ -716,10 +716,10 @@ footer hr{
     .trainers{
         width: 100%;
         height: fit-content;
-       margin: 54px auto;
+        margin: 54px auto;
     }
     .trainers img{
-        width: 270px;
+        width: 91%;
         height: 250px;
     }
     .trainer-intro{
