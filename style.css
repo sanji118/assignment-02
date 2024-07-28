@@ -384,6 +384,11 @@ footer hr{
     }
     .para{
         font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .h3{
+        font-size: 2rem;
     }
     .padding{
         padding: 35px 25px;
@@ -459,19 +464,16 @@ footer hr{
     .banner-title{
         height: fit-content;
     }
-    #banner-img{
-        padding-left: ;
-    }
     #banner-img .box-1{
        top: -550px;
-       left: 190px;
-       width: 50%;
+       left: 180px;
+       width: 45%;
     }
     .tag-container h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .tag-container p.para{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     #banner-img .box-2{
         top: -430px;
@@ -482,6 +484,7 @@ footer hr{
     }
     .h6{
         padding-top: 15px;
+        font-size: 1.2rem;
     }
     #run img{
        width: 103%;
@@ -520,6 +523,9 @@ footer hr{
     .pic-4> p{
         left: 0;
     }
+    th , td {
+        font-size: 1rem;
+    }
     #bmi form div.display{
         flex-direction: row;
         gap: 0;
@@ -533,6 +539,9 @@ footer hr{
     }
     input[type=submit]{
         width: 60%;
+    }
+    #activity{
+        width: 94%;
     }
     .trainers div.display{
         gap: 10px;
@@ -556,7 +565,9 @@ footer hr{
         top: -100px;
         left: 50px;
     }
-   
+    #footer, #footer>div.display{
+        gap: 35px;
+    }
 }
 
 
