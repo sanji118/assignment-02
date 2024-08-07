@@ -393,7 +393,7 @@ footer hr{
     .h3{
         font-size: 2rem;
     }
-    .padding{
+    .padding, #exercise{
         padding: 35px 25px;
     }
     #banner section.display{
@@ -512,10 +512,10 @@ footer hr{
         display: none;
     }
     .img-box-1 ,.img-box-5{
-        width: 52%;
+        width: 58%;
     }
     .img-box-2, .img-box-4{
-        width: 48%;
+        width: 52%;
     }
     #exercise div.display  p{
         font-size: 0.8rem;
@@ -589,6 +589,7 @@ footer hr{
 @media screen and (min-width:577px) and (max-width: 993px) {
     .body{
         width: 100%;
+        margin: 0;
     }
     #banner{
         padding: 20px 60px 0px 60px;
@@ -608,9 +609,13 @@ footer hr{
         width: 100%;
     }
     .navbar{
-        width: 100%;
         justify-content: space-between;
         gap: 100px;
+    }
+    .navlist {
+        width: 90%;
+        gap: 15px;
+        margin-right: 40px;
     }
     .button{
         display: flex;
